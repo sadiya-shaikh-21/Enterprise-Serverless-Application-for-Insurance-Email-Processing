@@ -1,0 +1,44 @@
+# .gitignore - Files to exclude from Git/GitHub
+# Git tracks code changes; this tells Git what to ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# Virtual Environment
+venv/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfstate.backup
+*.tfvars
+
+# Lambda packages
+*.zip
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables (NEVER commit secrets!)
+.env
+.secrets/

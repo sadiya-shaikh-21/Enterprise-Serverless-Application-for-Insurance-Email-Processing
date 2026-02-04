@@ -1,0 +1,31 @@
+# .coveragerc - Configuration for test coverage reporting
+# Test coverage shows what percentage of your code is tested
+
+[run]
+# Which folders to analyze
+source = src
+# Which folders to ignore
+omit = 
+    */tests/*
+    */__pycache__/*
+    */venv/*
+
+[report]
+# Show detailed coverage
+show_missing = true
+# Exclude lines from coverage calculation
+exclude_lines = 
+    # Don't count if the line has "pragma: no cover"
+    pragma: no cover
+    # Don't count import statements
+    ^import
+    ^from
+    # Don't count function/method definitions
+    def __
+    # Don't count debug statements
+    ^\s*logger\.debug
+    ^\s*print\(
+
+[html]
+# Where to generate HTML report
+directory = htmlcov
