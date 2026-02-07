@@ -1,0 +1,23 @@
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.yaml, *.yml]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Jenkinsfile]
+indent_style = space
+indent_size = 2
+
+[.gitignore, .gitattributes, .editorconfig]
+
+[.vscode, .idea, .pytest_cache, __pycache__]
+
+[*.pyc, *.pyo, *.pyd, *.so, *.dll, *.exe, *.pdb, *.class, *.o, *.a, *.lib, *.obj, *.swp, .DS_Store, .gitkeep]
+
+[**/venv/**]
+exclude_patterns = venv/
